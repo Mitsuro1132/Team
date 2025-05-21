@@ -1,8 +1,9 @@
-class bank:
+class Bank:
     credit_person = None
     __bankname = 'PrivatBank'
     customer_credit = 0
     customer_goods = []
+
     def __init__(self,name,email,count_dollar):
         self.name = name
         self.email = email
@@ -29,3 +30,10 @@ class bank:
         self.count_dollar += credit_dollar
         self.customer_credit += credit_dollar
 
+    @property
+    def name(self):
+        return self.name
+    
+    @name.setter
+    def name(self,new_name):
+        self.name = new_name
