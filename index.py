@@ -15,3 +15,11 @@ class bank:
     def course_dollar():
         count = 42
         print(f'count dollar now {count}')
+
+    def product(self,name_product,price):
+        if self.count_dollar > price:
+            self.customer_goods.append(name_product)
+            self.count_dollar -= price
+            print('Buy product')
+        else:
+            print("Dont have money :(")
