@@ -1,6 +1,7 @@
 class bank:
     credit_person = None
     __bankname = 'PrivatBank'
+    customer_credit = 0
     customer_goods = []
     def __init__(self,name,email,count_dollar):
         self.name = name
@@ -23,3 +24,8 @@ class bank:
             print('Buy product')
         else:
             print("Dont have money :(")
+
+    def give_credit(self,credit_dollar):
+        self.count_dollar += credit_dollar
+        self.customer_credit += credit_dollar
+
