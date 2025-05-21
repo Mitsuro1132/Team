@@ -45,3 +45,9 @@ class Bank:
     @email.setter
     def email(self,new_email):
         self.email = new_email
+
+    def check_credit(self):
+        if self.customer_credit > 10000:
+            print('ALOOOOOO!')
+        else:
+            print('ok')
