@@ -37,3 +37,11 @@ class Bank:
     @name.setter
     def name(self,new_name):
         self.name = new_name
+
+    @property
+    def email(self):
+        return self.email
+    
+    @email.setter
+    def email(self,new_email):
+        self.email = new_email
