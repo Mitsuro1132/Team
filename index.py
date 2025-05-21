@@ -10,3 +10,8 @@ class bank:
     @classmethod
     def get_bank_name(cls):
         print(cls.__bankname)
+
+    @staticmethod
+    def course_dollar():
+        count = 42
+        print(f'count dollar now {count}')
